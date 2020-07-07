@@ -17,3 +17,9 @@ def VideoCountFiles(path):
 		if file.endswith(".mp4"):
 			count = count+1
 	print(count)
+def VideoCountFiles(path):
+	count = 0
+	for file in os.listdir(path):
+		if file.endswith(".xml"):
+			count = count+1
+	print(count)
